@@ -34,11 +34,7 @@ def recommend():
     
     index = pt.index.get_loc(user_input)
 
-    similar_items = sorted(
-        list(enumerate(similarity_score[index])),
-        key=lambda x: x[1],
-        reverse=True
-    )[1:5]
+    
 
     data = []
 
